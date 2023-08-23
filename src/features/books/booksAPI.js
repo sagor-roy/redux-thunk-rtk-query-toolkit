@@ -2,7 +2,8 @@ import http from "../../utility/axios"
 
 // book fetch api
 export const fetchBooks = async (filter) => {
-    const response = await http.get(`/books${filter ? `?featured=${filter}` : ""}`);
+    const query = typeof filter === "boolean" ? `featured=${filter}` : `q=${filter}`
+    const response = await http.get(`/books?${query}`);
     return response.data;
 }
 

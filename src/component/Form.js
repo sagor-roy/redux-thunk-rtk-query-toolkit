@@ -28,7 +28,6 @@ function Form() {
             dispatch(create(book))
         } else {
             dispatch(updateBook(book))
-            //isSingleEmpty = false
         }
         setBook({
             name: "",

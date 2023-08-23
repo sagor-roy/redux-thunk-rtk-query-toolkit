@@ -13,11 +13,14 @@ function Book() {
     }, [dispatch])
 
     let content;
-    if (isLoading) content = <Loading/>
-    if(isError) content = <Error />
+    if (isLoading) content = <Loading />
+    if (isError) content = <Error />
+    if (book.length == 0) content = <h1>Data Not Found</h1>
     if (!isLoading && !isError) content = book.map(item => (
         <BookCard key={item.id} book={item} />
     ))
+
+    console.log(book.length);
 
     return (
         <div className="lws-bookContainer">
