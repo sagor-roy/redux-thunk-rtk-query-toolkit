@@ -1,17 +1,22 @@
 import React from 'react'
-import Logo from '../asset/img/lws-logo.svg'
+import Logo from '../asset/images/logo.svg'
+import Search from './Search'
 
 function Header() {
     return (
-        <header id="header">
-            <div className="container">
-                <img src={Logo} alt="logo" className="logo" />
-                <div className="flex items-center">
-                    <a className="text-white min-w-[50px] font-medium" href="#">Home</a>
-                    <button className="log-btn btn">Login</button>
-                </div>
+        <nav class="py-4 2xl:px-6">
+            <div class="container flex items-center justify-between">
+                <img src={Logo} width="150px" class="object-contain" />
+
+                <ul class="hidden md:flex items-center space-x-6">
+                    <li class="font-semibold cursor-pointer">Book Store</li>
+                    <li class="cursor-pointer">Wishlist</li>
+                    <li class="cursor-pointer">My Collection</li>
+                </ul>
+
+                <Search />
             </div>
-        </header>
+        </nav>
     )
 }
 

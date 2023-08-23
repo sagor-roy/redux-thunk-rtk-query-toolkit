@@ -1,16 +1,12 @@
 import React from 'react'
 import Header from './component/Header'
-import Form from './component/Form'
-import Table from './component/Table'
+import Body from './component/Body'
 
 function App() {
   return (
     <>
       <Header />
-      <section>
-        <Form />
-        <Table />
-      </section>
+      <Body />
     </>
   )
 }
