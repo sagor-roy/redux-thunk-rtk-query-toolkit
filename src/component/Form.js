@@ -3,11 +3,11 @@ import Frame from '../asset/img/icons/Frame.svg'
 import Vector1 from '../asset/img/icons/Vector (1).svg'
 import Vector3 from '../asset/img/icons/Vector (3).svg'
 import { useDispatch, useSelector } from 'react-redux'
-import { createThunkAction } from '../redux/reducer/action';
+import { add } from '../redux/toolkit/flightSlice'
 
 function Form() {
     const dispatch = useDispatch();
-    const data = useSelector(state => state.data);
+    const data = useSelector(state => state.flight);
     const [from, setFrom] = useState("");
     const [to, setTo] = useState("");
     const [date, setDate] = useState("");
@@ -20,7 +20,7 @@ function Form() {
             alert('You are maximum 3 flight booking')
             return false;
         }
-        dispatch(createThunkAction({ from, to, date, guests, classes }))
+        dispatch(add({ from, to, date, guests, classes }))
         setFrom("");
         setTo("");
         setDate("");

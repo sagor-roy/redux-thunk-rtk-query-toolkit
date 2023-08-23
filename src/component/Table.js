@@ -1,10 +1,10 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteThunkAction } from '../redux/reducer/action';
+import { remove } from '../redux/toolkit/flightSlice';
 
 function Table() {
     const dispatch = useDispatch();
-    const data = useSelector(state => state.data);
+    const data = useSelector(state => state.flight);
     return (
         <div className="table-container">
             <table className="booking-table">
@@ -40,7 +40,7 @@ function Table() {
                             </td>
                             <td className="px-6 py-4 text-center">
                                 <div className="flex justify-center gap-4">
-                                    <button onClick={() => dispatch(deleteThunkAction(index))} className="lws-remove">
+                                    <button onClick={() => dispatch(remove(index))} className="lws-remove">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                                             stroke="currentColor" className="w-6 h-6">
                                             <path strokeLinecap="round" strokeLinejoin="round"
