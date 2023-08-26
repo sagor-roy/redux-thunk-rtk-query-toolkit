@@ -15,8 +15,6 @@ function Form() {
         featured: false
     })
 
-    console.log(book);
-
     useEffect(() => {
         if (!isSingleEmpty) setBook(single)
     }, [isSingleEmpty, single])
