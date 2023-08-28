@@ -7,7 +7,7 @@ function Search() {
     const [search, setSearch] = useState("")
     const handleForm = (e) => {
         e.preventDefault();
-        dispatch(books(search))
+        dispatch(books({ search }))
     }
     return (
         <form className="flex items-center" onSubmit={handleForm}>

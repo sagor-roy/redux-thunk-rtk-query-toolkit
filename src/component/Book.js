@@ -9,13 +9,14 @@ function Book() {
     const dispatch = useDispatch();
     const { books: book, isError, isLoading } = useSelector(state => state.books);
     useEffect(() => {
-        dispatch(books());
+        dispatch(books({}));
     }, [dispatch])
+
 
     let content;
     if (isLoading) content = <Loading />
     if (isError) content = <Error />
-    if (book.length == 0) content = <h1>Data Not Found</h1>
+    if (book.length <= 0) content = <h1>Data Not Found...</h1>
     if (!isLoading && !isError) content = book.map(item => (
         <BookCard key={item.id} book={item} />
     ))

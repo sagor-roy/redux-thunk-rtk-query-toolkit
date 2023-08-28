@@ -15,7 +15,7 @@
       "thumbnail": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg",
       "price": 13.99,
       "rating": 4,
-      "featured": true,
+      "featured": false,
       "id": 2
     },
     {
@@ -23,7 +23,7 @@
       "author": "Marijn Haverbeke",
       "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
       "price": 23.99,
-      "rating": 4,
+      "rating": "5",
       "featured": true,
       "id": 3
     },
@@ -60,16 +60,16 @@
       "thumbnail": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg",
       "price": "615",
       "rating": "3",
-      "featured": true,
+      "featured": false,
       "id": 8
     },
     {
-      "name": "Vanna Preston",
-      "author": "Cum dolore expedita ",
-      "thumbnail": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg",
-      "price": "767",
-      "rating": "4",
-      "featured": false,
+      "name": "Francesca Brown",
+      "author": "Atque vitae quia cul",
+      "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
+      "price": "177",
+      "rating": "1",
+      "featured": true,
       "id": 9
     }
   ]

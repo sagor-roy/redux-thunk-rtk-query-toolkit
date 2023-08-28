@@ -7,7 +7,7 @@ function Feature() {
     const [active, setActive] = useState(false);
 
     const selecteTag = (status) => {
-        dispatch(books(status))
+        dispatch(books({ filter: status }))
         setActive(status)
     }
 

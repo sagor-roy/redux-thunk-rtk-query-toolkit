@@ -4,7 +4,7 @@ import { createBooks, deleteBooks, fetchBooks, updateBooks } from "./booksAPI"
 // book fetch async
 export const books = createAsyncThunk(
     'books/fetchBook',
-    async (filter = false) => {
+    async (filter) => {
         const response = await fetchBooks(filter);
         return response;
     }
