@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { books } from '../features/books/booksSlice';
 
 function Search() {
-    const dispatch = useDispatch();
     const [search, setSearch] = useState("")
     const handleForm = (e) => {
         e.preventDefault();
-        dispatch(books({ search }))
     }
     return (
         <form className="flex items-center" onSubmit={handleForm}>

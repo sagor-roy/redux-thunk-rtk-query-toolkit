@@ -1,13 +1,13 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import booksReducer from '../features/books/booksSlice';
-import logger from 'redux-logger';
+//import logger from 'redux-logger';
+import { apiSlice } from '../services/book/apiSlice';
 
 export const store = configureStore({
   reducer: {
-    books: booksReducer
+    [apiSlice.reducerPath]: apiSlice.reducer
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: false,
-    }).concat(logger),
+    }).concat(apiSlice.middleware),
 });

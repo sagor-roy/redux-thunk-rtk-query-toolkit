@@ -1,27 +1,24 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
+import { useGetBookQuery, useGetBooksQuery } from '../services/book/apiSlice'
 import BookCard from './BookCard'
-import { useDispatch, useSelector } from 'react-redux'
-import { books } from '../features/books/booksSlice';
 import Loading from '../utility/Loading';
 import Error from '../utility/Error';
 
 function Book() {
-    const dispatch = useDispatch();
-    const { books: book, isError, isLoading } = useSelector(state => state.books);
-    useEffect(() => {
-        dispatch(books({}));
-    }, [dispatch])
+    const { data: book = [], isError, isLoading } = useGetBooksQuery();
+    const {data: getBook, } = useGetBookQuery();
+    const [isEdit, setIsEdit] = useState(false);
 
+    const handleEditClick = (id) => {
+        alert(id)
+    }
 
     let content;
     if (isLoading) content = <Loading />
     if (isError) content = <Error />
-    if (book.length <= 0) content = <h1>Data Not Found...</h1>
     if (!isLoading && !isError) content = book.map(item => (
-        <BookCard key={item.id} book={item} />
+        <BookCard key={item.id} book={item} editHandler={handleEditClick} />
     ))
-
-    console.log(book.length);
 
     return (
         <div className="lws-bookContainer">

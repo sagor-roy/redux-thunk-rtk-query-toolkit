@@ -1,13 +1,10 @@
-import { useDispatch } from "react-redux"
-import { books } from "../features/books/booksSlice";
+
 import { useState } from "react";
 
 function Feature() {
-    const dispatch = useDispatch();
     const [active, setActive] = useState(false);
 
     const selecteTag = (status) => {
-        dispatch(books({ filter: status }))
         setActive(status)
     }
 

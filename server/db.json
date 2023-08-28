@@ -10,24 +10,6 @@
       "id": 1
     },
     {
-      "name": "The Last Thing He Told Me: A Novel",
-      "author": "Laura Dave",
-      "thumbnail": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg",
-      "price": 13.99,
-      "rating": 4,
-      "featured": false,
-      "id": 2
-    },
-    {
-      "name": "Eloquent JavaScript, 3rd Edition",
-      "author": "Marijn Haverbeke",
-      "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
-      "price": 23.99,
-      "rating": "5",
-      "featured": true,
-      "id": 3
-    },
-    {
       "name": "Zelda Harmon",
       "author": "Similique itaque per",
       "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
@@ -71,6 +53,24 @@
       "rating": "1",
       "featured": true,
       "id": 9
+    },
+    {
+      "name": "Paula Davis",
+      "author": "Hic quasi unde optio",
+      "thumbnail": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2022/01/Screenshot-2022-05-04-at-17.20.48-e1651678584559.png?auto=format&q=60&fit=max&w=930",
+      "price": "22",
+      "rating": "3",
+      "featured": false,
+      "id": 10
+    },
+    {
+      "name": "Iris Richards",
+      "author": "Aliqua Nisi aute im",
+      "thumbnail": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2022/01/Screenshot-2022-05-04-at-17.20.48-e1651678584559.png?auto=format&q=60&fit=max&w=930",
+      "price": "569",
+      "rating": "1",
+      "featured": false,
+      "id": 12
     }
   ]
 }
